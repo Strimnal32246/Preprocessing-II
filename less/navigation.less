@@ -3,34 +3,42 @@
     .flex();
     border: 2px dashed @navigation-border;
     padding: 15px;
+    .line-dotted;
 
     @media @mobile {
         flex-direction: column;
         align-items: center;
     }
 
-    @media @mobile {
+    h1 {
+        font-size: 3.0rem;
+    }
 
-        h1 {
-            font-size: 3.0rem;
-        }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+        width: 45%;
+        font-size: 1.8rem;
+        margin-right: 10px;
 
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            text-decoration: none;
-            color: black;
-            width: 45%;
-            font-size: 1.8rem;
-            margin-right: 10px;
+        @media @mobile {
 
-            @media @mobile {
+            nav {
+                padding-top: 10px;
+                font-size: 1rem;
+                display: flex;
+                justify-content: space-evenly;
 
-                nav {
-                    padding-top: 10px;
-                    font-size: 1rem;
-                    display: flex;
-                    justify-content: space-evenly;
+                @media @mobile {
+
+                    nav {
+                        padding-top: 10px;
+                        font-size: 1rem;
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
 
                     a {
                         .flex();
@@ -43,12 +51,12 @@
                             flex-direction: column;
                             padding: 0px 5px;
                         }
+
                     }
                 }
-
             }
 
-           .nav a:hover {
+            .nav a:hover {
                 text-decoration: underline;
                 color: purple;
 
@@ -57,22 +65,8 @@
                     text-decoration: underline;
                     color: purple;
                 }
+
             }
         }
-                @media @mobile {
-
-                    nav {
-                        padding-top: 10px;
-                        font-size: 1rem;
-                        display: flex;
-                        justify-content: space-evenly;
-
-                        a {
-                            padding: 0px 5px;
-                        }
-                    }
-                }
-            }
-        }
-
-
+    }
+}
