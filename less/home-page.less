@@ -15,9 +15,10 @@
             padding-right: 1%;
         }
 
-        .img-content {
+        .img-content1 {
             width: 48%;
             padding-left: 1%;
+            align-content: center;
 
             img {
                 border-radius: 10px;
@@ -41,7 +42,7 @@
     }
 
     .content-destination {
-        width: 75%;
+
         margin: 0 auto 30px;
 
         img {
@@ -56,8 +57,25 @@
         justify-content: space-between;
 
         .destination {
+            display: inline-flex;
             width: 30%;
-            margin-bottom: 30px;
+        }
+    }
+}
+
+.sign-up {
+    @media(max-width: 515px) {
+        .sign-up {
+            width: 50%;
+            height: 50px;
+            font-size: 2.5rem;
+        }
+    }
+
+    @media(max-width: 400px) {
+        .sign-up {
+            background: @button-bg;
+            color: pink;
         }
     }
 }
