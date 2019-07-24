@@ -1,1 +1,28 @@
 // Mixins in here
+.flex() {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up() {
+    display: block;
+    background-color: @button-bg;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+
+
+    a:hover {
+        color: @button-bg
+    }
+}
+
+.line-dotted {
+    border-bottom: 2px dashed @navigation-border;
+    max-width: none;
+    width: 100%;
+    margin: none;
+}
